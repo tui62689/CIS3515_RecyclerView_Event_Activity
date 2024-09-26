@@ -14,7 +14,11 @@ class NumberDisplayAdapter (private val numbers: Array<Int>) : RecyclerView.Adap
     // TODO (Step 1b: Invoke lambda via onClickListener)
     inner class NumberViewHolder (layout: View) : RecyclerView.ViewHolder (layout) {
         // enumerate views inside layout
-        val textView = layout.findViewById<TextView>(R.id.textView)
+        val textView = layout.findViewById<TextView>(R.id.textView).apply {
+            setOnClickListener{
+
+            }
+        }
 
     }
 
