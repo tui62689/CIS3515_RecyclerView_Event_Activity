@@ -16,7 +16,7 @@ class NumberDisplayAdapter (private val numbers: Array<Int>, private val callBac
         // enumerate views inside layout
         val textView = layout.findViewById<TextView>(R.id.textView).apply {
             setOnClickListener{
-
+                callBack(numbers[adapterPosition])
             }
         }
 
